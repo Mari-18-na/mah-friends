@@ -33,18 +33,18 @@
     .orb {
       position: fixed;
       border-radius: 50%;
-      background: radial-gradient(circle, rgb(215, 15, 199), transparent 40%);
       animation: float 10s infinite ease-in-out;
       pointer-events: none;
       z-index: 0;
     }
 
-    .orb:nth-child(1) { width: 150px; height: 150px; top: 10%; left: 20%; animation-delay: 0s; }
-    .orb:nth-child(2) { width: 100px; height: 100px; top: 40%; left: 80%; animation-delay: 2s; }
-    .orb:nth-child(3) { width: 120px; height: 120px; top: 70%; left: 10%; animation-delay: 4s; }
-    .orb:nth-child(4) { width: 180px; height: 180px; top: 60%; left: 50%; animation-delay: 1s; }
-    .orb:nth-child(5) { width: 80px; height: 80px; top: 20%; left: 70%; animation-delay: 3s; }
-    .orb:nth-child(6) {width:110px; height: 110px; top: 20%; left: 10%; animation-delay: 5s; }
+    .orb:nth-child(1) { width: 150px; height: 150px; top: 10%; left: 20%; animation-delay: 0s; background: radial-gradient(circle, rgb(215, 15, 199), transparent 40%); }
+    .orb:nth-child(2) { width: 100px; height: 100px; top: 40%; left: 80%; animation-delay: 2s; background: radial-gradient(circle, rgb(78, 215, 15), transparent 40%); }
+    .orb:nth-child(3) { width: 120px; height: 120px; top: 70%; left: 10%; animation-delay: 4s; background: radial-gradient(circle, rgb(15, 215, 195), transparent 40%); }
+    .orb:nth-child(4) { width: 180px; height: 180px; top: 60%; left: 50%; animation-delay: 1s; background: radial-gradient(circle, rgb(255, 0, 0), transparent 40%); }
+    .orb:nth-child(5) { width: 80px; height: 80px; top: 20%; left: 70%; animation-delay: 3s; background: radial-gradient(circle, rgb(0, 21, 255), transparent 40%); }
+    
+
 
     @keyframes float {
       0% { transform: translateY(0) scale(1); opacity: 0.5; }
@@ -84,6 +84,9 @@
     .flip-card:nth-child(10) { animation-delay: 1s; }
     .flip-card:nth-child(11) { animation-delay: 1.1s; }
     .flip-card:nth-child(12) { animation-delay: 1.2s; }
+    .flip-card:nth-child(13) { animation-delay: 1.3s; }
+    .flip-card:nth-child(14) { animation-delay: 1.4s; }
+    .flip-card:nth-child(15) { animation-delay: 1.5s; }
 
     @keyframes fadeInUp {
       to {
@@ -121,7 +124,7 @@
     }
 
     .flip-card-front {
-      background: linear-gradient(145deg, #1e1e1e00, #2a2a2a00);
+      background: linear-gradient(145deg, #1e1e1e93, #2a2a2a90);
       font-weight: bold;
     }
 
@@ -142,7 +145,10 @@
     .card-9 .flip-card-front, .card-9 .flip-card-back { box-shadow: 0 0 20px #00ced1; }
     .card-10 .flip-card-front, .card-10 .flip-card-back { box-shadow: 0 0 20px #ff6347; }
     .card-11 .flip-card-front, .card-11 .flip-card-back { box-shadow: 0 0 20px #ff9900; }
-    .card-12 .flip-card-front, .card-12 .flip-card-back { box-shadow: 0 0 20px #33ba1c; }
+    .card-12 .flip-card-front, .card-12 .flip-card-back { box-shadow: 0 0 20px #31ba1c; }
+    .card-13 .flip-card-front, .card-13 .flip-card-back { box-shadow: 0 0 20px #ffeb14; }
+    .card-14 .flip-card-front, .card-14 .flip-card-back { box-shadow: 0 0 20px #2bc0e2; }
+    .card-15 .flip-card-front, .card-15 .flip-card-back { box-shadow: 0 0 20px #2f00ff; }
   </style>
 </head>
 <body>
@@ -153,22 +159,28 @@
   <div class="orb"></div>
   <div class="orb"></div>
   <div class="orb"></div>
+  
+
+
 
   <h1>My Bestest Friends</h1>
 
   <div class="friends-container">
-    <div class="flip-card card-1"><div class="flip-card-inner"><div class="flip-card-front">valentine</div><div class="flip-card-back">she is scary and cool at same time and is more mature then me</div></div></div>
-    <div class="flip-card card-2"><div class="flip-card-inner"><div class="flip-card-front">onyx</div><div class="flip-card-back">always bored and is the funniest person ive known and also silliest person ive known</div></div></div>
-    <div class="flip-card card-3"><div class="flip-card-inner"><div class="flip-card-front">gangsta</div><div class="flip-card-back">onyxs bf and also a cool and amazing person</div></div></div>
+    <div class="flip-card card-1"><div class="flip-card-inner"><div class="flip-card-front">Valentine</div><div class="flip-card-back">she is scary and cool at same time and is more mature then me </div></div></div>
+    <div class="flip-card card-2"><div class="flip-card-inner"><div class="flip-card-front">Onyx</div><div class="flip-card-back">always bored and is the funniest person ive known and also silliest person ive known</div></div></div>
+    <div class="flip-card card-3"><div class="flip-card-inner"><div class="flip-card-front">Gangsta</div><div class="flip-card-back">onyxs bf and also a cool and amazing person</div></div></div>
     <div class="flip-card card-4"><div class="flip-card-inner"><div class="flip-card-front">G4</div><div class="flip-card-back">pretty kwel person who does not skid there codes and he is also one of few mature people ive met</div></div></div>
-    <div class="flip-card card-5"><div class="flip-card-inner"><div class="flip-card-front">toast</div><div class="flip-card-back">silly and always hungry person who likes to eat 24/7 kwel and i love bullying him and anoyying the shit out of him </div></div></div>
+    <div class="flip-card card-5"><div class="flip-card-inner"><div class="flip-card-front">Toast</div><div class="flip-card-back">silly and always hungry person who likes to eat 24/7 kwel and i love bullying him and anoyying the shit out of him </div></div></div>
     <div class="flip-card card-6"><div class="flip-card-inner"><div class="flip-card-front">JR</div><div class="flip-card-back">A really nice person and is also pretty chill to talk to also cool</div></div></div>
-    <div class="flip-card card-7"><div class="flip-card-inner"><div class="flip-card-front">envi</div><div class="flip-card-back">She is more mature then me and is also mah bestie and also mah coolest friend that i met online</div></div></div>
-    <div class="flip-card card-8"><div class="flip-card-inner"><div class="flip-card-front">lust</div><div class="flip-card-back">Kewl person nothing alot to say pretty nice and kewl person</div></div></div>
+    <div class="flip-card card-7"><div class="flip-card-inner"><div class="flip-card-front">Envi</div><div class="flip-card-back">She is more mature then me and is also mah bestie and also mah coolest friend that i met online</div></div></div>
+    <div class="flip-card card-8"><div class="flip-card-inner"><div class="flip-card-front">Lust</div><div class="flip-card-back">Kewl person nothing alot to say pretty nice and kewl person</div></div></div>
     <div class="flip-card card-9"><div class="flip-card-inner"><div class="flip-card-front">Spizzy</div><div class="flip-card-back">a person who is kewl and chill but also chatoic</div></div></div>
-    <div class="flip-card card-10"><div class="flip-card-inner"><div class="flip-card-front">mellow</div><div class="flip-card-back">he loves minecraft too much but is also a sweet and repective person other then that</div></div></div>
-    <div class="flip-card card-11"><div class="flip-card-inner"><div class="flip-card-front">agent</div><div class="flip-card-back">Mah bestie and also a person who knows alot of what goes on with my brain</div></div></div>
-    <div class="flip-card card-12"><div class="flip-card-inner"><div class="flip-card-front">eme</div><div class="flip-card-back">a child who is also my close friend and she is really sweet as well</div></div></div>
+    <div class="flip-card card-10"><div class="flip-card-inner"><div class="flip-card-front">Mellow</div><div class="flip-card-back">he loves minecraft too much but is also a sweet and repective person other then that</div></div></div>
+    <div class="flip-card card-11"><div class="flip-card-inner"><div class="flip-card-front">Agent</div><div class="flip-card-back">Mah bestie and also a person who knows alot of what goes on with my brain</div></div></div>
+    <div class="flip-card card-12"><div class="flip-card-inner"><div class="flip-card-front">Eme</div><div class="flip-card-back">a child who is also my close friend and she is really sweet as well and is also like my younger sister to me :)</div></div></div>
+    <div class="flip-card card-13"><div class="flip-card-inner"><div class="flip-card-front">Cr7</div><div class="flip-card-back">his a bit silly and a little mean some times but his a pretty kewl person and is pretty nice too</div></div></div>
+    <div class="flip-card card-14"><div class="flip-card-inner"><div class="flip-card-front">Cam</div><div class="flip-card-back">so kewll and one of my close friends and she seems pretty mature she is really cool</div></div></div>
+    <div class="flip-card card-15"><div class="flip-card-inner"><div class="flip-card-front">Mini</div><div class="flip-card-back">a kewl person who i also call "worlds best ragebaiter" but is a nice and silly person and a good friend of mine</div></div></div>
   </div>
 
   <script>
